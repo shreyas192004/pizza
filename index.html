@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pizza hut</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/global.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=El+Messiri&display=swap" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <style>
+body {
+background-color: rgba(0, 0, 0, 0.6); /* Adjust the alpha value for the blackish fade effect */
+background-image: url('image_6.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
+}
+h5, h3, p, a {
+          color: white;
+      }
+
+      .overlay {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(0, 0, 0, 0.5); /* Adjust the alpha value (last parameter) for the blackish fade effect */
+      }
+      body {
+  font-family: 'El Messiri', sans-serif;
+  background-color: rgba(0, 0, 0, 0.6);
+  background-image: url('image_6.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+h5, h3, p, a {
+  color: white;
+}
+
+h1 {
+  text-align: left;
+  font-size: 2em;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.center_1 {
+  font-size: 2em;
+  text-align: left;
+}
+
+
+
+.btn {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+  </style>
+</head>
+<body>
+
+<section id="header_main" class="clearfix">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4 space_all">
+                <div class="header_main_3">
+                    <!-- Add content here if needed -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="header" class="cd-secondary-nav" style="background-color: rgb(255, 0, 0);">
+    <div class="container">
+        <div class="row">
+            <nav class="navbar navbar-default">
+                <!-- Brand and toggle get grouped for better mobile display -->
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="dropdown-thumbnail-preview">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="index.html" class="hvr-underline-from-center">HOME</a></li>
+                        <li><a href="about.html" class="hvr-underline-from-center">ABOUT</a></li>
+                        <li><a href="login.php" class="hvr-underline-from-center">LOGIN</a></li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </nav>
+        </div>
+    </div>
+</section>
+
+<section id="center" class="clearfix">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-5">
+                <div class="center_1">
+                    <h5>WE Welcome YOU</h5>
+                    <h3>Pizza <a href="#">HUT</a></h3>
+                    <p>Welcome to Pizza Hut, your go-to destination for delicious pizza! Our passion for creating the perfect pizza drives everything we do. From handcrafted dough made fresh daily to the finest quality ingredients and mouthwatering toppings, each pizza is a masterpiece.</p>
+                </div>
+                <div class="center_2">
+                    <ul>
+                        <li><a href="login.php" class="btn">Load More</a></li>
+                        <li><a href="login.php" class="btn">Book Now</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-7">
+                <div class="center_3">
+                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+  
+
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+  
+                            <div class="item active">
+                                <img src="img/3.png" alt="abc">
+                            </div>
+                            <div class="item">
+                                <img src="img/4.png" alt="abc">
+                            </div>
+                        </div>
+
+                        <!-- Controls -->
+                        <a class="left carousel-control" href="http://bootsnipp-env.elasticbeanstalk.com/iframe/xBdN#carousel-example-generic" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                        </a>
+                        <a class="right carousel-control" href="http://bootsnipp-env.elasticbeanstalk.com/iframe/xBdN#carousel-example-generic" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<script>
+    $(document).ready(function(){
+        /*****Fixed Menu******/
+        var secondaryNav = $('.cd-secondary-nav'),
+            secondaryNavTopPosition = secondaryNav.offset().top;
+        $(window).on('scroll', function(){
+            if($(window).scrollTop() > secondaryNavTopPosition ) {
+                secondaryNav.addClass('is-fixed');    
+            } else {
+                secondaryNav.removeClass('is-fixed');
+            }
+        }); 
+        
+    });
+</script>
+<script>
+    $(document).ready(function() {
+        $('#Carousel').carousel({
+            interval: 5000
+        })
+    });
+</script>
+
+</body>
+</html>
